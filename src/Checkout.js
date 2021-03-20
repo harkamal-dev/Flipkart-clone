@@ -4,26 +4,31 @@ import './reducer';
 import { getTotalBasket } from './reducer';
 import {useStateValue} from './StateProvider';
 
-function Checkout() {
+function Checkout({id,img,title,sale,price}) {
         
   const [ {basket},dispatch] = useStateValue();
 
         return (<>
 <div className="small-container cart-page">
-  <div>
-    <div>
+    <div className="checkout-heading">
       <div>Product</div>
-      <div>Quantity</div>
       <div>Subtotal</div>
+    </div>
+
+    <div className="cart-items-list">
+          <div><img src={img} alt=""></img></div>
+                <div><strong>{title}</strong></div>
+                <div  className="flat-off"><p>{sale}</p></div>
+                <div className="price"><h3>{price}</h3></div>
+                <button className="add-to-basket-btn">Add to basket</button>
     </div>
 
 
   </div>
 
-  <div className="total-price">
+  <div className="total-price-new">
     <div>Subtotal({basket.length} items) : </div>
     <div>Total : {getTotalBasket(basket)}</div>
-  </div>
 </div>
 
 

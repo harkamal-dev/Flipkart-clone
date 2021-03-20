@@ -8,6 +8,20 @@
     padding: 20px;
   }
   
+  .checkout-heading{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .total-price-new{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 26vw;
+  }
+
+  .cart-page{
+    height: auto;
+  }
   nav {
     flex: 1;
     text-align: right;
@@ -236,13 +250,13 @@
   
   .footer {
     background: #2874F0;
-    color: #8a8a8a;
+    color: white;
     font-size: 14px;
     padding: 60px 0 20px;
   }
   
   .footer p {
-    color: #8a8a8a;
+    color: white;
   }
   
   .footer h3 {

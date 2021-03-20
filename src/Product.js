@@ -32,8 +32,6 @@ function Product({id,img,title,sale,price}) {
                 <div className="price"><h3>{price}</h3></div>
                 <button onClick={addToBasket} className="add-to-basket-btn">Add to basket</button>
             </div>
-
-            
         </div>
     )
 }
