@@ -1,13 +1,33 @@
 import React from 'react'
 import './Login.css';
 import { useState} from 'react';
+import { auth } from './firebase';
+import {useHistory} from 'react-router-dom';
 
 function Login() {
 
+    const history = useHistory();
     const [email,setEmail] =useState('');
     const [password, setPassword] = useState('');
 
+    const Login =(e)=>{
+        e.preventDefault();
+
+        auth.signInWithEmailAndPassword(email,password)
+        .then((auth)=>{
+            history.push('/')
+        }
+        ).catch(error=>alert.error)
+    }
     
+    const Register =(e)=>{
+        e.preventDefault();
+
+        auth.createUserWithEmailAndPassword(email,password)
+        .then((auth)=>{
+            history.push('/Register')
+        }).catch(error=>alert.error)
+    }
 
     return (
     <div className="outer-div-login">
@@ -22,9 +42,9 @@ function Login() {
                     <input className="email-input" value={email} onChange={e=>setEmail(e.target.value)} type="text" placeholder="Enter email/mobile number"></input>
                     <input className="email-input" value={password} onChange={e=>setPassword(e.target.value)} type="password" placeholder="Enter password"></input>
                     <p > By continuing, you agree to Flipkart Clone's Terms of Use and Privacy Policy.</p>
-                    <button className="login-button" type="submit" >Login</button>
+                    <button className="login-button" onClick={Login} type="submit" >Login</button>
                     <p className="or-text">OR</p>
-                    <button className="otp-button" type="submit" >Request OTP</button>
+                    <button className="otp-button" onClick={Register} type="submit" >Register</button>
                 </form>
             </div>
 
