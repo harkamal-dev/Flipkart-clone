@@ -13,11 +13,103 @@
     justify-content: space-evenly;
   }
 
+  .header-checkout-1{
+    margin-left: 4vw;
+  }
+  .header-checkout-2{
+    margin-left: 23vw;
+  }
+
   .total-price-new{
     display: flex;
     justify-content: flex-end;
+    margin-right: 9vw;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+
+  .cart-item-div{
+    box-shadow: 0px 0px 13px 0px #888888;
+  }
+
+  .total-price-new > strong{
+    font-size: 1.3rem;
+  }
+
+  .proceed-checkout button{
+    background-color: #2874F0;
+    margin-bottom: 28px;
+    margin-top: -1px;
+    height: 38px !important;
+    width: 157px !important;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem !important;
+    margin-left: 67vw;
+    cursor: pointer;
+    font: bold;
+    font-weight: bold
+  }
+
+  .proceed-checkout button:hover{
+    transform: scale(1.04);
+}
+
+@media (min-width:300px){
+  .cart-item-image{
+    width: 14vw !important;
+    height: 10vh !important;
+    margin-left: 10px !important;
+  }
+  .cart-item-div{
+    margin-left: 0vw !important;
+    height: 13vh !important;
+  }
+  .right-div-cart{
+    width: 33vw !important;
+  }
+  .cart-item-title{
+    font-size: 0.62rem !important;
+    width: 39vw !important;
+  }
+  /* strong{
+    font-size: 1rem !important;
+  } */
+}
+
+@media (min-width:1000px){
+  .cart-item-image{
+    width: 9vw !important;
+    height: 17vh !important;
+    margin-left: 10px !important;
+    margin-top: 2vh !important;
+  }
+  .cart-item-div{
+    margin-left: 4vw !important;
+    height: 20vh !important;
+    width: 64vw !important;
+  }
+  .right-div-cart{
+    width: 33vw !important;
+    margin-left: 1vw !important;
+  }
+  .cart-item-title{
+    font-size: 0.76rem !important;
+    width: 31vw !important;
+  }
+  .cart-item-sale{
+    font-size: 0.7rem !important;
+  }
+
+  .total-price-new{
+    font-size: 1rem !important;
     margin-right: 26vw;
   }
+
+  
+}
+
 
   .cart-page{
     height: auto;
@@ -540,14 +632,7 @@
     transition: transform 1s;
   }
   
-  form input {
-    width: 100%;
-    height: 30px;
-    margin: 10px 0;
-    padding: 0 10px;
-    border: 1px solid #ccc;
-  }
-  
+
   form .btn {
     width: 100%;
     border: none;

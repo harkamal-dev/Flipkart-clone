@@ -1,0 +1,68 @@
+.three-product{
+    width: 100vw;
+}
+
+h3{
+    font-size: 1rem !important;
+}
+
+.three-product-one{
+    width: 100vw;
+}
+
+@media (max-width:350px){
+    .three-product{
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+        width: 100vw;
+    }
+
+    .three-product-one{
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+    h3{
+        line-height: 1rem;
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: 600;
+        margin-bottom: 0px !important;
+    }
+    
+}
+
+@media (min-width:768px){
+    .three-product{
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+        width: 100% !important;
+        margin-bottom: 0px !important;
+
+    }
+
+    .three-product-one{
+        margin-left: 0px !important;
+        width: 100% !important;
+        margin-top: 10px !important;
+        margin-top: 20px !important;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+    h3{
+        line-height: 1rem;
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: 600;
+        margin-bottom: 0px !important;
+    }
+    .add-to-basket-btn{
+        height: 20px !important;
+        width: 80px !important;
+        font-size: 0.6rem;
+        margin-top: 0px !important;
+    }
+}

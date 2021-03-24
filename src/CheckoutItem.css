@@ -1,0 +1,129 @@
+.cart-item-div{
+    width: 50vw ;
+    display: flex;
+    margin-left: 13vw;
+    margin-top: 2vw;
+}
+
+.cart-item-image {
+    height: 176px;
+    width: 178px;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.cart-item-title{
+    width: 274px;
+    display: flex;
+}
+
+.item-cart-price{
+    margin-left: 10vw;
+    text-align: start;
+    margin-top: 24px ;
+}
+
+.remove-from-cart button{
+    margin-top: 4vw !important;
+    width: 104px !important;
+    font-size: 0.7rem !important;
+    height: 19px !important;
+}
+
+.remove-from-cart button:hover{
+    transform: scale(1.06) !important;
+    cursor: pointer !important ;
+}
+
+
+@media (min-width:300px){
+    .proceed-checkout button{
+        margin-top: 0vw !important;
+        width: 145px !important;
+        font-size: 0.8rem !important;
+        height: 25px !important;
+        margin-left: 53vw;
+    }
+    .cart-item-div{
+        width: 85vw !important;
+        height: 15vh !important;
+    }
+    .remove-from-cart button{
+        margin-top: 1vw !important;
+        width: 80px !important;
+        font-size: 0.5rem !important;
+        height: 13px !important;
+    }
+
+    .cart-item-image {
+        height: 51px !important;
+    width: 56px !important;
+    background-size: contain;
+    margin-right: 10px;
+    margin-top: 12px;
+    }
+    
+    .cart-item-title{
+        width: 274px;
+        display: flex;
+    }
+    
+    .item-cart-price{
+        margin-left: 15vw;
+        text-align: start;
+        margin-top: 24px ;
+        font-size: 0.7rem;
+    }
+    
+
+} 
+
+
+@media (min-width:1000px){
+    .cart-item-div{
+        width: 67vw !important;
+        display: flex;
+        margin-left: 13vw;
+        margin-top: 2vw;
+    }
+    
+    .cart-item-image {
+        height: 85px !important;
+    width: 113px !important;
+    background-size: contain;
+    margin-right: 24px;
+    }
+    
+    .cart-item-title{
+        width: 274px;
+        display: flex;
+    }
+    
+    .item-cart-price{
+        margin-left: 10vw;
+        text-align: start;
+        margin-top: 24px ;
+        font-size: 1rem !important;
+    }
+    
+    .remove-from-cart button{
+        margin-top: 0vw !important;
+        width: 104px !important;
+        font-size: 0.7rem !important;
+        height: 19px !important;
+    }
+    
+    .remove-from-cart button:hover{
+        transform: scale(1.06) !important;
+        cursor: pointer !important ;
+    }
+
+    .proceed-checkout button{
+        margin-top: 0vw !important;
+    width: 182px !important;
+    font-size: 1rem !important;
+    height: 35px !important;
+    margin-left: 62vw;
+    }
+}
+

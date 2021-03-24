@@ -23,16 +23,14 @@ function Product({id,img,title,sale,price}) {
     }
 
     return (
-        <div>
             <div className="product-container">
                 
                 <div><img src={img} alt=""></img></div>
-                <div><strong>{title}</strong></div>
+                <div><strong className="pricee">{title}</strong></div>
                 <div  className="flat-off"><p>{sale}</p></div>
-                <div className="price"><h3>{price}</h3></div>
-                <button onClick={addToBasket} className="add-to-basket-btn">Add to basket</button>
+                <div className="price"><h3>₹{price}</h3></div>
+                <button onClick={addToBasket} className="add-to-basket-btn">Add to cart</button>
             </div>
-        </div>
     )
 }
 

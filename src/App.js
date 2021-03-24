@@ -11,6 +11,7 @@ import Checkout from './Checkout';
 import './index';
 import { StateProvider } from './StateProvider';
 import reducer, { initialState } from './reducer';
+import Login from './Login';
 
 const App=()=> {
   return(
@@ -20,6 +21,12 @@ const App=()=> {
         <Switch>
           <Route path="/checkout">
             <Checkout />
+          </Route>
+        </Switch>
+
+        <Switch>
+          <Route path="/login">
+            <Login />
           </Route>
         </Switch>
 
