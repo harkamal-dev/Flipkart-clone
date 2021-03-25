@@ -3,6 +3,7 @@ import './Login.css';
 import { useState} from 'react';
 import { auth } from './firebase';
 import {useHistory} from 'react-router-dom';
+import './reducer';
 
 function Login() {
 
@@ -25,7 +26,8 @@ function Login() {
 
         auth.createUserWithEmailAndPassword(email,password)
         .then((auth)=>{
-            history.push('/Register')
+            if(auth)
+                history.push('/')
         }).catch(error=>alert.error)
     }
 

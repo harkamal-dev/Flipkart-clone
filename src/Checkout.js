@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './Checkout.css';
 import CheckoutItem from './CheckoutItem';
 import './reducer';
-import { getTotalBasket } from './reducer';
 import {useStateValue} from './StateProvider';
 
 function Checkout() {
@@ -11,6 +10,7 @@ function Checkout() {
   const [ {basket},dispatch] = useStateValue();
 
 const getTotalBasket=(basket) =>
+
     basket?.reduce((amount,item) => item.price + amount , 0);    
 
         return (<>

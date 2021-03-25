@@ -8,6 +8,7 @@ function Product({id,img,title,sale,price}) {
     const [ {basket},dispatch] = useStateValue();
 
     const addToBasket = () => {
+        console.log("basket is",basket);
         dispatch({
             type:"ADD_TO_BASKET",
             item:{
@@ -24,7 +25,6 @@ function Product({id,img,title,sale,price}) {
 
     return (
             <div className="product-container">
-                
                 <div><img src={img} alt=""></img></div>
                 <div><strong className="pricee">{title}</strong></div>
                 <div  className="flat-off"><p>{sale}</p></div>
