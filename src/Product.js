@@ -8,7 +8,7 @@ function Product({id,img,title,sale,price}) {
     const [ {basket},dispatch] = useStateValue();
 
     const addToBasket = () => {
-        console.log("basket is",basket);
+        // console.log("basket is",basket);
         dispatch({
             type:"ADD_TO_BASKET",
             item:{

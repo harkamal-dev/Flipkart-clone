@@ -8,7 +8,7 @@ function Home() {
         <div className="three-product">
         <Product 
           id="1"
-          img="https://rukminim1.flixcart.com/image/416/416/jmz7csw0/smartwatch/t/z/x/sm-r800nzsainu-samsung-original-imaf9rvuq4nwfe5f.jpeg?q=70"
+          img="https://static.bhphoto.com/images/images2500x2500/1565204800_1491588.jpg"
           title="SAMSUNG Galaxy Watch 46 mm Smartwatch"
           sale="Flat 60% off"
           price={799}

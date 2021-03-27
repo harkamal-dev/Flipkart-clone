@@ -10,40 +10,38 @@ import {
 import Checkout from './Checkout';
 import './index';
 import { StateProvider, useStateValue } from './StateProvider';
-import reducer, { initialState } from './reducer';
 import Login from './Login';
 import {useEffect} from 'react';
 import { auth } from './firebase';
+import Payment from './Payment';
 
 
 const App=()=> {
 
-  // const [{user},dispatch]= useStateValue();
+  const [{},dispatch]=useStateValue('');
 
-  //   useEffect(()=>{
-  //     auth.onAuthStateChanged(authUser=>{
-  //       console.log("the user is:",authUser);
+    useEffect(()=>{
+      auth.onAuthStateChanged(authUser=>{
+        // console.log("the user is:",authUser);
 
-  //       if(authUser){
-  //         dispatch(
-  //           {
-  //             type:"SET_USER",
-  //             user:authUser
-  //           }
-  //         )
-  //       }else{
-  //         dispatch(
-  //           {
-  //             type:"SET_USER",
-  //             user:null
-  //           }
-  //         )
-  //       }
-  //     })
-  //   })
+        if(authUser){
+          dispatch(
+            {
+              type:"SET_USER",
+              user:authUser
+            }
+          )
+        }else{
+          dispatch({
+              type:"SET_USER",
+              user:null
+            })
+        }
+      })
+    },[]);
 
   return(
-    <StateProvider initialState={initialState} reducer={reducer}>
+
     <Router>
         <Header />
         <Switch>
@@ -59,13 +57,18 @@ const App=()=> {
         </Switch>
 
         <Switch>
+          <Route path="/payment">
+            <Payment />
+          </Route>
+        </Switch>
+
+        <Switch>
           <Route exact path="/">
             <Carousel />
             <Home />
           </Route>
         </Switch>
     </Router>
-  </StateProvider>
   )
 }
 

@@ -49,7 +49,7 @@ const getTotalBasket=(basket) =>
 
 
 
-<Link to="/login">
+<Link to="/Payment">
 <div className="proceed-checkout">
   <button >Proceed to checkout</button>
 </div>

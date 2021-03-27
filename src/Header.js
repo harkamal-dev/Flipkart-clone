@@ -3,11 +3,16 @@ import './Header.css';
 import {Link} from "react-router-dom";
 import './reducer';
 import {useStateValue } from './StateProvider';
+import { auth } from './firebase';
 
 function Header() {
 
-    const [{basket},dispatch] = useStateValue();
-    
+    const [{basket,user},dispatch] = useStateValue();
+
+    const logoutAuthentication=()=>{
+        auth.signOut();
+    }
+
     return (
         <div className="header-divv">
             <div className='header'>
@@ -22,7 +27,8 @@ function Header() {
                 <span className='header-children'>
                     
                     <Link to='/Login'>
-                    <h3 className="login-page">Login</h3>
+                    <h3 onClick={logoutAuthentication} className="login-page">{user?'Logout':'Login'}</h3>
+                    <p className="email-div" >{user?.email}</p>
                     </Link>
                     
                     <h3 className="more-item">More</h3>
@@ -33,7 +39,7 @@ function Header() {
                         
                     </Link>
                     <Link to='/Checkout'>
-                    <strong className="cart-count">{basket.length}</strong>
+                    <strong className="cart-count"> {basket.length} </strong>
                     <div className="cart-icon"><strong >cart</strong></div>
                     </Link>
                     

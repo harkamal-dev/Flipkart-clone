@@ -125,6 +125,7 @@
   }
 
 
+
 @media (min-width:1000px){
 
     .carousel-divv{
@@ -133,6 +134,7 @@
       .carousel-slide{
         height: 140px;
       }
+
       .d-block{
         height: 100px;
       }
@@ -145,7 +147,6 @@
       .carousel-indicators button{
           display: none;
       }
-
   
       .carousel-control-prev-icon{
           display: none;
