@@ -3,6 +3,8 @@ import './Payment.css';
 import { useStateValue } from './StateProvider';
 
 import Icon from '@material-ui/core/Icon';
+import { Link } from 'react-router-dom';
+import './Placed';
 
 function Payment() {
 
@@ -10,6 +12,8 @@ function Payment() {
 
     const getTotalBasket=(basket) =>
     basket?.reduce((amount,item) => item.price + amount , 0);
+
+    
 
     return (
         <>
@@ -78,8 +82,10 @@ function Payment() {
 
             
         </div>
-        <div  className="pay"><button >Place Order</button></div>
 
+        <Link to='/Placed'>
+        <div  className="pay"><button >Place Order</button></div>
+        </Link>
 </>
         
     )

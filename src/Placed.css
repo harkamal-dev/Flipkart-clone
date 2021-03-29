@@ -1,0 +1,14 @@
+.placed{
+    margin-top: 27vh;
+    margin-left: 35vw;
+}
+
+.placed h3{
+    margin-left: 7vw;
+    margin-bottom: 50px !important;
+}
+
+.placed a{
+    margin-left: 10vw;
+    margin-top: 10px;
+}

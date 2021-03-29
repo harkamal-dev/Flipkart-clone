@@ -6,6 +6,7 @@
     box-shadow: 0px 0px 13px 0px #888888;
     width: 25vw !important;
     height: 360px;
+    border-radius: 3px;
 }
 
 .product-divv{
@@ -36,8 +37,8 @@
 }
 
 
-.flat-off{
-    color: rgb(99, 131, 36);
+.flat-off p{
+    color: #61BD74 !important;
     font-size: 14px;
 }
 
@@ -223,10 +224,10 @@
     }
     .three-product-one{
         margin-left: -4vw;
-        margin-top: -12vh !important;
+        margin-top: -16vh !important;
     }
     .product-divv{
-        margin-top: 4vh !important;
+        margin-top: -16vh !important;
         margin-left: 6vw !important;
     }
 
@@ -268,6 +269,6 @@
       }
 
       h3{
-          font-size: 1rem !important;
+          font-size: 0.96rem !important;
       }
 }

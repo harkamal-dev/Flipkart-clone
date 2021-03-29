@@ -50,6 +50,7 @@ function Home() {
         price={11999}/>
       </div>
         </div>
+        
     )
 }
 

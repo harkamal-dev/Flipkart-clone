@@ -14,6 +14,11 @@ import Login from './Login';
 import {useEffect} from 'react';
 import { auth } from './firebase';
 import Payment from './Payment';
+import Placed from './Placed';
+import Deals from './Deals';
+import BestAppliance from './BestAppliance';
+import Appliances from './Appliances';
+
 
 
 const App=()=> {
@@ -63,9 +68,17 @@ const App=()=> {
         </Switch>
 
         <Switch>
+          <Route path="/placed">
+            <Placed />
+          </Route>
+        </Switch>
+
+        <Switch>
           <Route exact path="/">
             <Carousel />
+            <Deals />
             <Home />
+            <Appliances />
           </Route>
         </Switch>
     </Router>

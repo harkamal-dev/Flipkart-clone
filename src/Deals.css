@@ -1,0 +1,99 @@
+.deal-div{
+    width: 96vw;
+    height: 48vh;
+    margin-left: 20px;
+    margin-top:22vh;
+    box-shadow: 0px 0px 6px 0px #888888;
+
+    background-color: white;
+    border-radius: 3px;
+}
+
+.deal-header{
+    display: flex;
+    flex-direction: row;
+    height: 9vh;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.deal-header-heading{
+    margin-left: 2vw;
+    margin-top: 2vh;
+    width: 12vw;
+}
+
+.deal-header-heading h3{
+    font-size: 1.2rem !important;
+}
+
+.deal-button{
+    margin-left: 61vw;
+    margin-top: 2vh;
+}
+
+.deal-button {
+    background-color: #2874F0;
+    margin-bottom: 10px;
+    margin-top: 11px !important;
+    height: 36px;
+    width: 98px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2px;
+}
+
+.deal-product{
+    width: 14vw;
+    margin: 1vw;
+    box-shadow: 0px 0px 5px 0px #e2e2e2;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.deal-product:hover{
+    transform: scale(1.03);
+}
+
+.company > p{
+    color: #61BD74 !important;
+}
+
+
+.deal-product img{
+    width: 11vw;
+    height:22vh;
+    margin: 10px;
+    background-size: cover;
+}
+
+.div-body{
+    display: flex;
+}
+
+.timer-div p{
+    font-size: 1rem !important;
+}
+
+.timer-image{
+    width: 23px;
+    margin-right: 7px;
+    margin-left: 1vw;
+}
+
+
+.appliance-div{
+    margin-top: -2vh !important;
+
+    width: 96vw;
+    height: 48vh;
+    margin-left: 20px;
+    box-shadow: 0px 0px 6px 0px #888888;
+
+    background-color: white;
+    margin-bottom: 5vh;
+    border-radius: 3px;
+}
+
+.appliance-button{
+    margin-left: 74vw !important;
+}
